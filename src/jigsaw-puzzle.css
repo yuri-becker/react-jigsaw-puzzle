@@ -1,0 +1,20 @@
+.jigsaw-puzzle {
+    position: relative;
+}
+
+.jigsaw-puzzle__piece {
+    position: absolute;
+    border: 1px solid #cecece;
+    cursor: pointer;
+    z-index: 1;
+    user-select: none;
+}
+
+.jigsaw-puzzle__piece.jigsaw-puzzle__piece--solved {
+    border-color: #000;
+    z-index: 0;
+}
+.jigsaw-puzzle__piece.jigsaw-puzzle__piece--dragging {
+    z-index: 5;
+    box-shadow: 1px 1px 5px 0px #00000091;
+}
