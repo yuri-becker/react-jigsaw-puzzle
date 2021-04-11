@@ -97,6 +97,10 @@ export const JigsawPuzzle: FC<JigsawPuzzleProps> = ({
 
   const onTileMouseDown = useCallback((tile: Tile, event: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
     if (!tile.solved) {
+      if (event.type === 'touchstart') {
+        document.documentElement.style.setProperty('overflow', 'hidden')
+      }
+
       const eventPos = {
         x: (event as React.MouseEvent).pageX ?? (event as React.TouchEvent).touches[0].pageX,
         y: (event as React.MouseEvent).pageY ?? (event as React.TouchEvent).touches[0].pageY
@@ -113,6 +117,8 @@ export const JigsawPuzzle: FC<JigsawPuzzleProps> = ({
 
   const onRootMouseMove = useCallback((event: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
     if (draggingTile.current) {
+      event.stopPropagation()
+      event.preventDefault()
       const eventPos = {
         x: (event as React.MouseEvent).pageX ?? (event as React.TouchEvent).touches[0].pageX,
         y: (event as React.MouseEvent).pageY ?? (event as React.TouchEvent).touches[0].pageY
@@ -133,8 +139,11 @@ export const JigsawPuzzle: FC<JigsawPuzzleProps> = ({
       draggingTile.current.elem.style.setProperty('top', `${draggedToRelativeToRoot.y}px`)
     }
   }, [draggingTile, rootSize])
-  const onRootMouseUp = useCallback(() => {
+  const onRootMouseUp = useCallback((event: React.TouchEvent | React.MouseEvent) => {
     if (draggingTile.current) {
+      if (event.type === 'touchend') {
+        document.documentElement.style.removeProperty('overflow')
+      }
       draggingTile.current?.elem.classList.remove('jigsaw-puzzle__piece--dragging')
       const draggedToPercentage = {
         x: clamp(draggingTile.current!.elem.offsetLeft / rootSize!.width, 0, 1),
@@ -174,7 +183,7 @@ export const JigsawPuzzle: FC<JigsawPuzzleProps> = ({
               onMouseUp={onRootMouseUp}
               onTouchCancel={onRootMouseUp}
               onMouseLeave={onRootMouseUp}
-              className='jigsaw-puzzle'
+              className="jigsaw-puzzle"
               style={{ height: !calculatedHeight ? undefined : `${calculatedHeight}px` }}
               onDragEnter={event => {
                 event.stopPropagation()

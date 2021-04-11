@@ -50,3 +50,4 @@ You can work around this by setting either a fixed width or a width dependent on
 This is because each tile is basically rendering the whole image but "zooms in".<br/>
 If you want to make really large puzzles, this is probably not for you. Still, I decided to not limit the tile amount because computers and phones are getting faster by the day.
 * I built this for a very specific use-case. If you find bugs or want features added, feel free to either create an issue or make a PR.
+* Touch scrolling is disabled while moving a tile by temporarily setting `overflow:hidden` on the `<html>` element.<br/> Keep in mind that this does not prevent the navigation bar from moving in and out on mobile phones if the site is larger than the viewport.
