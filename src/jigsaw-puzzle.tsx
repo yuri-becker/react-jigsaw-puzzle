@@ -1,5 +1,4 @@
 import React, { FC, useCallback, useEffect, useRef, useState } from 'react'
-import './jigsaw-puzzle.css'
 
 const clamp = (value: number, min: number, max: number) => {
   if (value < min) { return min }

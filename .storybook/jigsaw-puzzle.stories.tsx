@@ -1,6 +1,7 @@
 import { Meta, Story } from '@storybook/react'
 import React from 'react'
 import { JigsawPuzzle } from '../src'
+import '../src/jigsaw-puzzle.css'
 import './jigsaw-puzzle.css'
 
 export default {

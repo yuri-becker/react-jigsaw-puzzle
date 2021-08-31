@@ -9,11 +9,19 @@ Check out the [Demo](https://react-jigsaw-puzzle.web.app/) to see if it fits you
 
 ```tsx
 // Minimal usage
+
+import { JigsawPuzzle } from 'react-jigsaw-puzzle/lib'
+import 'react-jigsaw-puzzle/lib/jigsaw-puzzle.css'
+
 <JigsawPuzzle imageSrc='https://any.image/url.jpg'/>
 ```
 
 ```tsx
 // With custom amount of rows and columns
+
+import { JigsawPuzzle } from 'react-jigsaw-puzzle/lib'
+import 'react-jigsaw-puzzle/lib/jigsaw-puzzle.css'
+
 <JigsawPuzzle
   imageSrc='https://any.image/url.jpg'
   rows={4}

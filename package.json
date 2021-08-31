@@ -1,7 +1,7 @@
 {
   "name": "react-jigsaw-puzzle",
   "description": "Simple plug-and-play React component for jigsaw puzzles",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "GPL-3.0-only",
   "author": {
     "name": "Yuri Becker",
