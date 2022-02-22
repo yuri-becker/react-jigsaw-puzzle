@@ -1,4 +1,7 @@
 # react-jigsaw-puzzle
+
+[![npm version](https://badge.fury.io/js/react-jigsaw-puzzle.svg)](https://www.npmjs.com/package/react-jigsaw-puzzle)
+
 Simple plug-and-play React component for jigsaw puzzles.
 
 It supports resizing and can be fed with any image URL without the need to "tile" the image first.
