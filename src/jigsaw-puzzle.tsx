@@ -36,6 +36,9 @@ export const JigsawPuzzle: FC<JigsawPuzzleProps> = ({
   columns = 4,
   onSolved = () => {}
 }) => {
+  if (!imageSrc) {
+    return null
+  }
   const [tiles, setTiles] = useState<Tile[] | undefined>()
   const [imageSize, setImageSize] = useState<{ width: number, height: number }>()
   const [rootSize, setRootSize] = useState<{ width: number, height: number }>()
