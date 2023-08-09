@@ -1,8 +1,6 @@
 [![Demo](https://img.shields.io/website?label=Demo&style=for-the-badge&url=https%3A%2F%2Fyuri-becker.github.io/react-jigsaw-puzzle)](https://yuri-becker.github.io/react-jigsaw-puzzle)
 [![NPM](https://img.shields.io/npm/v/react-jigsaw-puzzle?style=for-the-badge)](https://www.npmjs.com/package/react-jigsaw-puzzle)
-[![GLP-3.0 License](https://img.shields.io/github/license/yuri-becker/react-jigsaw-puzzle?style=for-the-badge)](https://github.com/yuri-becker/react-jigsaw-puzzle/blob/main/LICENSE.txt)
-
-[![GitHub Repo stars](https://img.shields.io/github/stars/yuri-becker/react-jigsaw-puzzle?style=for-the-badge)](https://github.com/yuri-becker/japp/stargazers)
+[![GLP-3.0 License](https://img.shields.io/github/license/yuri-becker/react-jigsaw-puzzle?style=for-the-badge)](https://github.com/yuri-becker/react-jigsaw-puzzle/blob/main/LICENSE.txt) [![GitHub Repo stars](https://img.shields.io/github/stars/yuri-becker/react-jigsaw-puzzle?style=for-the-badge)](https://github.com/yuri-becker/japp/stargazers)
 [![GitHub Repo stars](https://img.shields.io/github/last-commit/yuri-becker/react-jigsaw-puzzle?style=for-the-badge)](https://github.com/yuri-becker/react-jigsaw-puzzle/commits/main)
 
 
@@ -12,7 +10,7 @@ Simple plug-and-play React component for jigsaw puzzles.
 
 It supports resizing and can be fed with any image URL without the need to "tile" the image first.
 
-Check out the [Demo](https://react-jigsaw-puzzle.web.app/) to see if it fits your needs.
+Check out the [Demo](https://yuri-becker.github.io/react-jigsaw-puzzle/) to see if it fits your needs.
 
 <ul>
 <li>

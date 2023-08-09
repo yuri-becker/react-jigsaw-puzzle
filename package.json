@@ -21,7 +21,7 @@
     "react-component",
     "tiles",
     "tiling",
-    "tiling-puzz;e"
+    "tiling-puzzle"
   ],
   "private": false,
   "main": "lib/index.js",
